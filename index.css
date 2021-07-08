@@ -7,20 +7,24 @@
 }
 
 body {
-    background: #1b1b2b;
+    background: #fff;
     padding: 5px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
 
 h1 {
-    color: #c0c0c0;
+    color: black;
     font-weight: 100;
+}
+h3{
+    color:mediumaquamarine;
+
 }
 
 .btn {
-    color: #999;
-    background: rgba(0, 0, 0, 0.5);
+    color:black;
+    background: #c0c0c0;
     padding: 10px 20px;
     font-size: 12px;
     text-decoration: none;
@@ -57,7 +61,7 @@ h1 {
 #scrathvideo {
 }
 #scrathvideoinfo {
-    color: #c0c0c0;
+    color: mediumaquamarine;
     font-weight: bold;
     text-align: center;
 }
@@ -65,9 +69,30 @@ h1 {
     align-content: center;
     color: black;
     font-weight: bold; 
-    background-color:orangered;
+    background-color:;
     background-position: center;
     padding: 5px;
-    margin: 10px 315px;
+    margin: 50px 315px;
+    border: dashed;
+}
+#instru {
+    align-content: center;
+    color: black;
+    font-weight: bold;
+    background-color:;
+    background-position: center;
+    padding: 5px;
+    margin: 50px 315px;
+    border: dashed;
+}
+
+#creditos {
+    align-content: center;
+    color: black;
+    font-weight: bold;
+    background-color:;
+    background-position: center;
+    padding: 5px;
+    margin: 50px 315px;
     border: dashed;
 }
