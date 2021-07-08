@@ -8,6 +8,8 @@
 
 body {
     background: #fff;
+}
+#menu {
     padding: 5px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -21,6 +23,10 @@ h3{
     color:mediumaquamarine;
 
 }
+h2 {
+    color: mediumaquamarine;
+}
+
 
 .btn {
     color:black;
@@ -59,6 +65,7 @@ h3{
     color: #c0c0c0;
 }
 #scrathvideo {
+    text-align:center;
 }
 #scrathvideoinfo {
     color: mediumaquamarine;
@@ -67,7 +74,7 @@ h3{
 }
 #infoscrath {
     align-content: center;
-    color: black;
+    color: maroon;
     font-weight: bold; 
     background-color:;
     background-position: center;
