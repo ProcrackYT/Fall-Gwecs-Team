@@ -27,6 +27,25 @@ h3{
 h2 {
     color: mediumaquamarine;
 }
+a {
+    color:black;
+}
+
+a {
+    text-decoration: none;
+
+}
+    a:link {
+        text-decoration: none;
+        color: #00F;
+
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #F00;
+    }
+
 
 
 .btn {
@@ -104,3 +123,5 @@ h2 {
     margin: 50px 315px;
     border: dashed;
 }
+
+
