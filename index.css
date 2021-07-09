@@ -8,6 +8,7 @@
 
 body {
     background: #545460;
+    opacity:
 }
 #menu {
     padding: 5px;
@@ -29,7 +30,7 @@ h2 {
 
 
 .btn {
-    color:black;
+    color: black;
     background: #c0c0c0;
     padding: 10px 20px;
     font-size: 12px;
