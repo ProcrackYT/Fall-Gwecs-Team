@@ -1,0 +1,100 @@
+<script>
+
+    function Acao(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+</script>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" name="viewport" content="" />
+    <title>Wesley</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+    <link href="../css/membros.css" rel="stylesheet" />
+    <link href="../css/padrao.css" rel="stylesheet" />
+    <link href="../css/artigos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../img/Fall_Gwecs_simbolo_COMPLETO_PRETO.ico" />
+</head>
+<body style="text-align:center">
+    
+     <    <!--Menu-->
+     <div 
+ 
+     id="Menu..."
+ 
+     style="
+     color: black; 
+     padding: 5px; 
+     width: 600px; 
+     height: 100px; 
+     border: double; 
+     background-color:darkgray; 
+     display: none;">
+ 
+         <!--Conteudo que vai aparecer al clicar no menu-->
+         <img 
+             style="height: 100px;" 
+             src="../img/Fall_Gwecs_simbolo_rapido_preto.png" 
+             align="left">
+ 
+         <p 
+             style="text-align:left;">
+         
+             Gerente da Pagina: 
+             <a href="html/wesleyuser.html">Wesley Queiroz Alencar</a> <br>
+             
+             Designers: 
+             <a href="html/caiouser.html">Caio Rodrigo Forim</a>, 
+             <a href="html/fabriciouser.html">Fabrício Keltika Tanquella</a> e 
+             <a href="html/ederuser.html">Eder</a>
+ 
+     </div>
+ 
+     <!--Botão que vai fazer o menu aparecer e desaparecer-->
+     <div align=left>
+         <button 
+             
+             type="button" 
+             onclick="Acao('Menu...')">
+                 <img 
+                     style=
+                         "height: 25px;" 
+                     src="../img/menu.png" 
+                     alt="">
+         </button>
+     </div>
+    <div 
+        id="menu"
+        style=
+            "padding-bottom: 50px; padding-top:50px;"> 
+        
+            <a href="../index.html" class="btn">Inicio</a>
+            <a href="membros.html" class="btn" id="atual">Membros</a>
+            <a href="plataformas.html" class="btn">Plataformas</a>
+            <a href="projetos.html" class="btn">Jogos e Projetos</a>
+            <a href="contato.html" class="btn">Contacto</a>
+    
+        </div>
+        <h3>Defenda sua nave espacial</h3>
+        <iframe src="https://turbowarp.org/545610846/embed" width="499" height="416" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+    <div id="div1">
+        <p>
+
+            Instruçoes [BR] <br />
+            <br />
+            Controles de computador: <br />
+            Mova a nave espacial para cima: "Seta para cima" <br />
+            Mova a nave espacial para baixo: "Seta para baixo" <br />
+            Tiro a laser: "Espaço" <br />
+        </p>
+    </div>
+    <div id="creditos">
+        Este jogo foi criado por <a href="wesleyuser.html">Wesley Queiroz Alencar</a>.
+        Link oficial do projeto: <a href="https://scratch.mit.edu/projects/545610846/">https://scratch.mit.edu/projects/545610846/</a>
+    </div>
+</body>
+</html>

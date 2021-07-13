@@ -1,0 +1,31 @@
+
+
+#infoscrath {
+    align-content: center;
+    color: maroon;
+    font-weight: bold; 
+    background-position: center;
+    padding: 5px;
+    margin: 50px 315px;
+    border: dashed;
+}
+#instru {
+    align-content: center;
+    color: black;
+    font-weight: bold;
+    background-position: center;
+    padding: 5px;
+    margin: 50px 315px;
+    border: dashed;
+}
+
+#creditos {
+    align-content: center;
+    color: black;
+    font-weight: bold;
+    background-position: center;
+    padding: 5px;
+    margin: 50px 315px;
+    border: dashed;
+}
+
