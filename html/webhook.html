@@ -1,0 +1,107 @@
+<script>
+
+  function Acao(el) {
+      var display = document.getElementById(el).style.display;
+      if(display == "none")
+          document.getElementById(el).style.display = 'block';
+      else
+          document.getElementById(el).style.display = 'none';
+  }
+</script>
+
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Discord Webhook Sender</title>
+  <meta name="author" content="Zua">
+  <meta name="description" content="Simple Discord Webhook Sender">
+  <meta name="keywords" content="discord,zua,webhook">
+  <meta name="title" content="Discord Webhook Sender">
+
+  <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+  <link href="../css/membros.css" rel="stylesheet" />
+  <link href="../css/padrao.css" rel="stylesheet" />
+  <link href="../css/artigos.css" rel="stylesheet" />
+<link rel="stylesheet" href="../css/webhook.css">
+  <link rel="shortcut icon" href="../img/Fall_Gwecs_simbolo_COMPLETO_PRETO.ico">
+  <!--Menu-->
+  <div 
+
+  id="Menu..."
+
+  style="
+  color: black; 
+  padding: 5px; 
+  width: 600px; 
+  height: 100px; 
+  border: double; 
+  background-color:darkgray; 
+  display: none;">
+
+      <!--Conteudo que vai aparecer al clicar no menu-->
+      <img 
+          style="height: 100px;" 
+          src="../img/Fall_Gwecs_simbolo_rapido_preto.png" 
+          align="left">
+
+      <p 
+          style="text-align:left;">
+      
+          Gerente da Pagina: 
+          <a href="html/wesleyuser.html">Wesley Queiroz Alencar</a> <br>
+          
+          Designers: 
+          <a href="html/caiouser.html">Caio Rodrigo Forim</a>, 
+          <a href="html/fabriciouser.html">Fabrício Keltika Tanquella</a> e 
+          <a href="html/ederuser.html">Eder</a>
+
+  </div>
+
+  <!--Botão que vai fazer o menu aparecer e desaparecer-->
+  <div align=left>
+      <button 
+          
+          type="button" 
+          onclick="Acao('Menu...')">
+              <img 
+                  style=
+                      "height: 25px;" 
+                  src="../img/menu.png" 
+                  alt="">
+      </button>
+  </div>
+
+  <div id="menu"
+  style=
+            "padding-bottom: 50px; padding-top:50px;"
+  >
+      <a href="../index.html" class="btn">Fall-Gwecs-Team</a>
+      <a href="" class="btn" id="atual">Webhook </a>
+  </div>
+    
+  <div id="header">
+      <h1>Discord Webhook Sender</h>
+    </div>
+    <div id="container">
+      <div class="center-align">
+        <p>Link do Webhook</p><input type='text' id="link" placeholder="Digite o URL do webhook aqui.">
+        <p>Nome do Bot</p><input type="text" id="username" placeholder="Digite o nome de usuário do Webhook aqui * OPCIONAL" value="FallGwecsTeamWebhookSender">
+        <p>URL: do Avatar </p><input type="text" id="avatar" placeholder="URL da imagem">
+        <p>Conteúdo</p><input type="text" id="content" placeholder="Digite o conteúdo do webhook aqui">
+        <br>
+        <button id="btn">Send</button>
+        <center>
+       <!--JS log in the works atm-->
+        <p id='log'></p>
+      </center>
+    </div>
+  </div> 
+  </div>
+  <a href="https://thatziv.github.io/webhook/" >Este projeto é uma recopilação do projeto original do Zua </a>
+ <script src="https://thatziv.github.io/webhook/jquery.js"></script>
+  <script src="https://thatziv.github.io/webhook/main.js"></script>
+  </body>
+</html>
