@@ -1,0 +1,25 @@
+.white {
+    color: white;
+}
+
+.blue {
+	color: #3CF;
+}
+
+.green {
+	color: #0F0;
+}
+
+.red {
+    color: red;
+}
+
+#div1 {
+    color: black; 
+    font-weight: bold; 
+    background-position: center; 
+    padding: 5px; 
+    margin: 50px 100px; 
+    border: double; 
+    background-color:darkgray;
+}

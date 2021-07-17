@@ -1,14 +1,3 @@
-<script>
-
-  function Acao(el) {
-      var display = document.getElementById(el).style.display;
-      if(display == "none")
-          document.getElementById(el).style.display = 'block';
-      else
-          document.getElementById(el).style.display = 'none';
-  }
-</script>
-
 <!DOCTYPE html>
 <html>
   
@@ -20,67 +9,28 @@
   <meta name="description" content="Simple Discord Webhook Sender">
   <meta name="keywords" content="discord,zua,webhook">
   <meta name="title" content="Discord Webhook Sender">
-
-  <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-  <link href="../css/membros.css" rel="stylesheet" />
-  <link href="../css/padrao.css" rel="stylesheet" />
-  <link href="../css/artigos.css" rel="stylesheet" />
+  
 <link rel="stylesheet" href="../css/webhook.css">
-  <link rel="shortcut icon" href="../img/Fall_Gwecs_simbolo_COMPLETO_PRETO.ico">
-  <!--Menu-->
-  <div 
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/simple-line-icons.css">
+<link rel="stylesheet" href="../css/animate.css">
+<link rel="stylesheet" href="../css/templatemo_style.css">
+<link rel="stylesheet" href="../css/colors.css">
+<link rel="shortcut icon" href="../img/simbolo_goc_completo_preto.ico" />
 
-  id="Menu..."
+</head>
+<body style="text-align:center">
 
-  style="
-  color: black; 
-  padding: 5px; 
-  width: 600px; 
-  height: 100px; 
-  border: double; 
-  background-color:darkgray; 
-  display: none;">
-
-      <!--Conteudo que vai aparecer al clicar no menu-->
-      <img 
-          style="height: 100px;" 
-          src="../img/Fall_Gwecs_simbolo_rapido_preto.png" 
-          align="left">
-
-      <p 
-          style="text-align:left;">
-      
-          Gerente da Pagina: 
-          <a href="html/wesleyuser.html">Wesley Queiroz Alencar</a> <br>
-          
-          Designers: 
-          <a href="html/caiouser.html">Caio Rodrigo Forim</a>, 
-          <a href="html/fabriciouser.html">Fabrício Keltika Tanquella</a> e 
-          <a href="html/ederuser.html">Eder</a>
-
+<header class="site-header container animated fadeInDown">
+<div class="header-wrapper">
+<div class="row">
+<div class="col-md-4">
+  <div class="site-branding">
+    <a href="../index.html"><h1>Fall Gwecs Team</h1></a>
   </div>
-
-  <!--Botão que vai fazer o menu aparecer e desaparecer-->
-  <div align=left>
-      <button 
-          
-          type="button" 
-          onclick="Acao('Menu...')">
-              <img 
-                  style=
-                      "height: 25px;" 
-                  src="../img/menu.png" 
-                  alt="">
-      </button>
-  </div>
-
-  <div id="menu"
-  style=
-            "padding-bottom: 50px; padding-top:50px;"
-  >
-      <a href="../index.html" class="btn">Fall-Gwecs-Team</a>
-      <a href="" class="btn" id="atual">Webhook </a>
-  </div>
+</div>
+</header>
     
   <div id="header">
       <h1>Discord Webhook Sender</h>
@@ -89,7 +39,7 @@
       <div class="center-align">
         <p>Link do Webhook</p><input type='text' id="link" placeholder="Digite o URL do webhook aqui.">
         <p>Nome do Bot</p><input type="text" id="username" placeholder="Digite o nome de usuário do Webhook aqui * OPCIONAL" value="FallGwecsTeamWebhookSender">
-        <p>URL: do Avatar </p><input type="text" id="avatar" placeholder="URL da imagem">
+        <p>URL: do Avatar </p><input value="https://procrackyt.github.io/Fall-Gwecs-Team/img/Fall_Gwecs_simbolo_rapido_preto.png" type="text" id="avatar" placeholder="URL da imagem">
         <p>Conteúdo</p><input type="text" id="content" placeholder="Digite o conteúdo do webhook aqui">
         <br>
         <button id="btn">Send</button>
