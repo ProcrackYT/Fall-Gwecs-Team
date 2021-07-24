@@ -11,8 +11,22 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/templatemo_style.css">
 	<link rel="stylesheet" href="css/colors.css">
+	
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+    <style>
+        .btnPlayAudio {
+            min-width: 200px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
+	
 	<header class="site-header container animated fadeInDown">
 		<div class="header-wrapper">
 			<div class="row">
@@ -39,6 +53,7 @@
 							<li><a class="show-4 blogbutton" href="#">Membros</a></li>
 						</ul>
 					</nav>
+					
 				</div>
 			</div>
 		</div>
@@ -51,10 +66,28 @@
 				<h2 class="welcome-title animated fadeInLeft">Introdução</h2>
 				<p class="animated fadeInRight">Você esta na pagina oficial da <span class="blue">Fall Gwecs</span><span class="white">Team</span>. Esta pagina foi feita por alunos da turma edutech 12400133, aqui você vai encontrar varios projetos legais da nossa equipe.</p>
 				<ul class="list-icons animated fadeInUp">
-					<li><i class="icon-trophy"></i></li>
-					<li><i class="icon-badge"></i></li>
-					<li><i class="icon-magic-wand"></i></li>
-					<li><i class="icon-screen-desktop"></i></li>
+					<button style="background: none; border: none;" class="btnPlayAudio btn btn-success" data-audiourl="mp3/salamisound-1020113-treasure-chest-open-and-clear.mp3">
+						<li><i class="icon-trophy"></i></li>
+					</button>
+
+					<button style="background: none; border: none;" class="btnPlayAudio btn btn-success" data-audiourl="">
+						<li><i class="icon-badge"></i></li>
+					</button>
+
+					<button style="background: none; border: none;" class="btnPlayAudio btn btn-success" data-audiourl="">
+						<li><i class="icon-magic-wand"></i></li>
+					</button>
+
+					<button style="background: none; border: none;" class="btnPlayAudio btn btn-success" data-audiourl="">
+						<li><i class="icon-screen-desktop"></i></li>
+					</button>
+					
+					
+					
+					
+					
+
+					<script src="js/easteregg"></script>
 				</ul>
 			</div>
 			<div class="home-projects">
@@ -63,7 +96,11 @@
 						<div class="project-title animated fadeInUp">
 							<h2>ULTIMOS PROJETOS</h2>
 							<p><span class="green">Guardians Of Crystal</span> Um projéto que consiste em um jogo de rpg, survival e com muita aventura.<br><br> <span class="blue">Discord Webhook Sender</span> Este projeto consiste em uma ferramenta que permite você enviar mensagens para o Discord por meio de uma webhook.</p>
-							<a href="#" class="pink-button" >MAIS PROJETOS</a>
+							<ul class="main-menu">
+								
+								<li><a class="show-3 projectbutton; pin" href="#">Mais projetos</a></li>
+								
+							</ul>
 						</div>
 					</div>
 					<div class="project-home-holder col-md-6 col-sm-12">
