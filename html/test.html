@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Discord Webhook Sender</title>
+  <meta name="author" content="Zua">
+  <meta name="description" content="Simple Discord Webhook Sender">
+  <meta name="keywords" content="discord,zua,webhook">
+  <meta name="title" content="Discord Webhook Sender">
+  
+<link rel="stylesheet" href="../css/contato.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/simple-line-icons.css">
+<link rel="stylesheet" href="../css/animate.css">
+<link rel="stylesheet" href="../css/templatemo_style.css">
+<link rel="stylesheet" href="../css/colors.css">
+<link rel="shortcut icon" href="../img/simbolo_goc_completo_preto.ico" />
+  <body>
+    <header class="site-header container animated fadeInDown">
+      <div class="header-wrapper">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="site-branding">
+                      <a href="../index.html"><h1>Fall Gwecs Team</h1></a>
+                  </div>
+              </div>
+  </header>
+    <div id="container">
+      <div class="center-align">
+        
+        <p>Por favor informe o seu  e-mail</p><input type="text" id="username" placeholder="Digite o seu  e-mail" >
+       
+        <p>Digite sua mensagen </p><input type="text" id="content" placeholder="exp: não estou conseguindo entrar em um jogo...">
+        <br>
+        <button id="btn">Mandar</button>
+        <center>
+       <!--JS log in the works atm-->
+        <p id='log'></p>
+      </center>
+    </div>
+  </body>
+
+  <script src="https://thatziv.github.io/webhook/jquery.js"></script>
+  <script>/*   
+    Project by Zua 
+    https://github.com/thatziv/webhook 
+  */
+  $(function(){
+      $('#btn').click(function(){
+          var link = 'https://discord.com/api/webhooks/854395220657700885/fbT11eqc1ZamLYIoE3S4AJX42o4fQ1cxMLIyha_taehXTPQpACL949CBcvgJ86P8r2lT';
+          var username = $('#username').val();
+          var content = $('#content').val();
+          var avatar = ('https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97');
+          if (link==null || link=="",content==null || content=="")
+          {
+              alert("Please Fill Out All The Fields");
+              return false;
+          }
+          $.post(link, {"content": content, "username": username, "avatar_url": avatar,});
+  
+      });
+  });</script>
+</html>

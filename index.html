@@ -43,12 +43,14 @@
 						<ul class="main-menu">
 							<li><a class="show-1 active homebutton" href="#">Inicio</a></li>
 							<li><a class="show-3 projectbutton" href="#">Projetos</a></li>
+							<li><a class="show-2 aboutbutton" href="#">Contato</a></li>
 							<li><a class="show-4 blogbutton" href="#">Membros</a></li>
 						</ul>
 					</nav>
 					<nav class="main-navigation menu-responsive hidden-md hidden-lg">
 						<ul class="main-menu">
 							<li><a class="show-1 active homebutton" href="#">Inicio</a></li>
+							<li><a class="show-2 aboutbutton" href="#">Contato</a></li>
 							<li><a class="show-3 projectbutton" href="#">Projetos</a></li>
 							<li><a class="show-4 blogbutton" href="#">Membros</a></li>
 						</ul>
@@ -146,6 +148,45 @@
 				</div>
 			</div>	
 		</div>
+		<div id="menu-2" class="content about-section container">
+			<link rel="stylesheet" href="css/contato.css">
+			<div id="container">
+				<div class="center-align">
+				  
+				  <p>Por favor informe o seu  e-mail</p><input type="text" id="username" placeholder="Digite o seu  e-mail" >
+				 
+				  <p>Digite sua mensagen </p><input type="text" id="content" placeholder="exp: não estou conseguindo entrar em um jogo...">
+				  <br>
+				  <button id="btn">Mandar</button>
+				  <center>
+				 <!--JS log in the works atm-->
+				  <p id='log'></p>
+				</center>
+			  </div>
+			</body>
+		  
+			<script src="https://thatziv.github.io/webhook/jquery.js"></script>
+			<script>/*   
+			  Project by Zua 
+			  https://github.com/thatziv/webhook 
+			*/
+			$(function(){
+				$('#btn').click(function(){
+					var link = 'https://discord.com/api/webhooks/854395220657700885/fbT11eqc1ZamLYIoE3S4AJX42o4fQ1cxMLIyha_taehXTPQpACL949CBcvgJ86P8r2lT';
+					var username = $('#username').val();
+					var content = $('#content').val();
+					var avatar = ('https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97');
+					if (link==null || link=="",content==null || content=="")
+					{
+						alert("Please Fill Out All The Fields");
+						return false;
+					}
+					$.post(link, {"content": content, "username": username, "avatar_url": avatar,});
+			
+				});
+			});</script>
+		</div>
+
 		<div id="menu-3" class="content project-section container">
 			<div style="text-align: center; margin-bottom: 0px; padding-bottom: 50px; padding-top:50px; ">	
 				<h1>Nossos projetos atuais</h1>
