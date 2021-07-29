@@ -1,102 +1,308 @@
-﻿<!--Este script faz o botão menu abrir e fechar-->
-<script>
-
-    function Acao(el) {
-        var display = document.getElementById(el).style.display;
-        if(display == "none")
-            document.getElementById(el).style.display = 'block';
-        else
-            document.getElementById(el).style.display = 'none';
-    }
-</script>
-
-<!--Indioma dá pagina-->
+<!doctype html>
 <html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<title>Fall Gwecs Team WEB</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/templatemo_style.css">
+	<link rel="stylesheet" href="css/colors.css">
+	
 
-<!--Configuraçoes dá pagina-->
-    <head>
-        <meta charset="utf-8" name="viewport" content="" />
-        <title>Inicial</title>
-        <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-        <link href="css/index.css" rel="stylesheet" />
-        <link href="css/padrao.css" rel="stylesheet" />
-        <link href="css/artigos.css" rel="stylesheet" />
-        <link rel="shortcut icon" href="img/Fall_Gwecs_simbolo_COMPLETO_PRETO.ico" />
-    </head>
 
-<!--Conteudo dá pagina-->
-    <body>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
 
-        <!--Menu-->
-        <div 
+    <style>
+        .btnPlayAudio {
+            min-width: 200px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+	
+	<header class="site-header container animated fadeInDown">
+		<div class="header-wrapper">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="site-branding">
+						<a href="#"><h1>Fall Gwecs Team</h1></a>
+					</div>
+				</div>
+				<a href="#" class="toggle-nav hidden-md hidden-lg">
+					<i class="fa fa-bars"></i>
+				</a>
+				<div class="col-md-8">
+					<nav id="nav" class="main-navigation hidden-xs hidden-sm">
+						<ul class="main-menu">
+							<li><a class="show-1 active homebutton" href="#">Inicio</a></li>
+							<li><a class="show-3 projectbutton" href="#">Projetos</a></li>
+							<li><a class="show-2 aboutbutton" href="html/test.html">Contato</a></li>
+							<li><a class="show-4 blogbutton" href="#">Membros</a></li>
+						</ul>
+					</nav>
+					<nav class="main-navigation menu-responsive hidden-md hidden-lg">
+						<ul class="main-menu">
+							<li><a class="show-1 active homebutton" href="#">Inicio</a></li>
+							<li><a class="show-2 aboutbutton" href="html/test.html">Contato</a></li>
+							<li><a class="show-3 projectbutton" href="#">Projetos</a></li>
+							<li><a class="show-4 blogbutton" href="#">Membros</a></li>
+						</ul>
+					</nav>
+					
+				</div>
+			</div>
+		</div>
+	</header>
 
-        id="Menu..."
+	
+	<div id="menu-container">
+		<div id="menu-1" class="homepage home-section container">
+			<div class="home-intro text-center" >
+				<h2 class="welcome-title animated fadeInLeft">Introdução</h2>
+				<p class="animated fadeInRight">Você esta na pagina oficial da <span class="blue">Fall Gwecs</span><span class="white">Team</span>. Esta pagina foi feita por alunos da turma edutech 12400133, aqui você vai encontrar varios projetos legais da nossa equipe.</p>
+				<ul class="list-icons animated fadeInUp">
+					<button style="background: none; border: none;" class="btnPlayAudio btn btn-success" data-audiourl="mp3/salamisound-1020113-treasure-chest-open-and-clear.mp3">
+						<li><i class="icon-trophy"></i></li>
+					</button>
 
-        style="
-        color: black; 
-        padding: 5px; 
-        width: 600px; 
-        height: 100px; 
-        border: double; 
-        background-color:darkgray; 
-        display: none;">
+					<button style="background: none; border: none;" class="btnPlayAudio btn btn-success" data-audiourl="">
+						<li><i class="icon-badge"></i></li>
+					</button>
 
-            <!--Conteudo que vai aparecer al clicar no menu-->
-            <img 
-                style="height: 100px;" 
-                src="img/Fall_Gwecs_simbolo_rapido_preto.png" 
-                align="left">
+					<button style="background: none; border: none;" class="btnPlayAudio btn btn-success" data-audiourl="">
+						<li><i class="icon-magic-wand"></i></li>
+					</button>
 
-            <p 
-                style="text-align:left;">
-            
-                Gerente da Pagina: 
-                <a href="html/wesleyuser.html">Wesley Queiroz Alencar</a> <br>
-                
-                Designers: 
-                <a href="html/caiouser.html">Caio Rodrigo Forim</a>, 
-                <a href="html/fabriciouser.html">Fabrício Keltika Tanquella</a> e 
-                <a href="html/ederuser.html">Eder</a>
+					<button style="background: none; border: none;" class="btnPlayAudio btn btn-success" data-audiourl="">
+						<li><i class="icon-screen-desktop"></i></li>
+					</button>
+					
+					
+					
+					
+					
 
-        </div>
+					<script src="js/easteregg"></script>
+				</ul>
+			</div>
+			<div class="home-projects">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="project-title animated fadeInUp">
+							<h2>ULTIMOS PROJETOS</h2>
+							<p><span class="green">Guardians Of Crystal</span> Um projéto que consiste em um jogo de rpg, survival e com muita aventura.<br><br> <span class="blue">Discord Webhook Sender</span> Este projeto consiste em uma ferramenta que permite você enviar mensagens para o Discord por meio de uma webhook.</p>
+							<nav id="nav" class="main-navigation hidden-xs hidden-sm">
+								<ul class="main-menu">
+									<li><a class="show-3 projectbutton" href="#">Mais projetos</a></li>
+							</nav>
+							<nav class="main-navigation menu-responsive hidden-md hidden-lg">
+								<ul class="main-menu">
+									<li><a class="show-3 projectbutton" href="#"> Mais projetos</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="project-home-holder col-md-6 col-sm-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="project-item one animated fadeInRight">
+									<img src="img/goc_projeto.png" alt="">
+									<div class="overlay">
+										<h4><a href="html/goc.html">Guardians Of Crystal</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project-item two animated fadeInRight">
+									<img src="img/webhook_projetos.png" alt="">
+									<div class="overlay">
+										<h4><a href="html/webhook.html">Discord Webhook Sender</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project-item three animated fadeInRight">
+									<img src="img/thumb_-_Copia.png" alt="">
+									<div class="overlay">
+										<h4><a href="html/rob-nam2.html">ROB-NAM Odyssey</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="project-item four animated fadeInRight">
+									<img src="img/Project_Capture.jpg" alt="">
+									<div class="overlay">
+										<h4><a href="html/mk3ultimatebeta.html">MK3 ULTIMATE BETA</a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div id="menu-2" class="content about-section container">
+			<link rel="stylesheet" href="css/contato.css">
+			
+				<div class="center-align">
+				  
+				  <p>Por favor informe o seu  e-mail</p><input type="text" id="username" placeholder="Digite o seu  e-mail" >
+				 
+				  <p>Digite sua mensagen </p><input type="text" id="content" placeholder="exp: não estou conseguindo entrar em um jogo...">
+				  <br>
+				  <button id="btn">Mandar</button>
+				  <center>
+				 <!--JS log in the works atm-->
+				  <p id='log'></p>
+				</center>
+			 	</div>
+		
+		  
+			<script src="https://thatziv.github.io/webhook/jquery.js"></script>
+			<script>/*   
+			  Project by Zua 
+			  https://github.com/thatziv/webhook 
+			*/
+			$(function(){
+				$('#btn').click(function(){
+					var link = 'https://discord.com/api/webhooks/854395220657700885/fbT11eqc1ZamLYIoE3S4AJX42o4fQ1cxMLIyha_taehXTPQpACL949CBcvgJ86P8r2lT';
+					var username = $('#username').val();
+					var content = $('#content').val();
+					var avatar = ('https://www.google.com/gmail/about/static-2.0/images/logo-gmail.png?fingerprint=c2eaf4aae389c3f885e97081bb197b97');
+					if (link==null || link=="",content==null || content=="")
+					{
+						alert("Please Fill Out All The Fields");
+						return false;
+					}
+					$.post(link, {"content": content, "username": username, "avatar_url": avatar,});
+			
+				});
+			});</script>
+		</div>
 
-        <!--Botão que vai fazer o menu aparecer e desaparecer-->
-        <button 
+		<div id="menu-3" class="content project-section container">
+			<div style="text-align: center; margin-bottom: 0px; padding-bottom: 50px; padding-top:50px; ">	
+				<h1>Nossos projetos atuais</h1>
+				<a 
+					href=
+						"html/goc.html">
+						
 
-            type="button" 
-            onclick="Acao('Menu...')">
-                <img 
-                    style=
-                        "height: 25px;" 
-                    src="img/menu.png" 
-                    alt="">
-        </button>
+					<img 
+					style=
+						"height:100px" 
+					
+					src=
+						"img/simbolo_goc_completo_preto.png" 
+					
+					alt=
+						"GOC" 
+				/>
 
-        <!--logo e titulo dá pagina-->
-        <div 
-            style="text-align:center;">
+				</a>
+				<a 
+				href=
+					"html/webhook.html">
+					
 
-                <img
-                    style="height: 400px;" 
-                    src="img/Fall_Gwecs_simbolo_COMPLETO_BRANCO.ico" 
-                    alt="img/Fall_Gwecs_simbolo_COMPLETO_BRANCO">
+				<img 
+				style=
+					"height:100px" 
+				
+				src=
+					"img/webhook.png" 
+				
+				alt=
+					"GOC" 
+			/>
 
-                <h1>Fall Gwecs Team WEB</h1>
-        </div>
+			</a>
 
-        
-        <div 
-            id="menu"
-            style=
-                "padding-top: 30px; padding-bottom: 150px;">
-            
-                <h2>Você quer dar uma olhada nos seguintes artigos?</h1>
-                <a href="index.html" class="btn" id="atual">Inicio</a>
-                <a href="html/membros.html" class="btn">Membros</a>
-                <a href="html/plataformas.html" class="btn">Plataformas</a>
-                <a href="html/projetos.html" class="btn">Jogos e Projetos</a>
-                <a href="html/contato.html" class="btn">Contacto</a>
-        
-        </div>
-    </body>
+			<h1>Projetos solos dos integrantes</h1>
+
+			<a  href="html/rob-nam.html"><img style="height:100px" src="img/robnam_projetos.png" alt="ROB-NAM" /></a>
+
+				<a href="html/defendasuanaveespacial.html"><img style="height:100px" src="img/defendasuanaveespacial_projetos.png" alt="Defenda Sua Nave Espacial" /></a>
+
+				<a  href="html/rob-nam2.html"><img style="height:100px" src="img/thumb_-_Copia.png" alt="ROB-NAM Odyssey" /></a>
+
+				<a href="html/aluradefendercaio.html"><img style="height:100px" src="img/thumb_-_Copia (1).png" alt="Alternate Text" /></a>
+				
+				<a href="html/mk3ultimatebeta.html"><img style="height:100px" src="img/Project_Capture.jpg" alt="MK3 ULTIMATE BETA" /></a>
+
+				<a href="html/soccerteam.html"><img style="height:100px" src="img/img_Soccer_Game.png" alt="Soccer Team" /></a>
+		</div>	
+	</div>
+
+		<div id="menu-4" class="content blog-section container">
+			<div style="text-align:center;">
+				<h2>Membros do Fall Gwecs Team</h2>
+				<a 
+				
+				href="html/wesleyuser.html" >
+	
+				<img style="height: 150px;;"  src="img/wesleycircular.png" alt="Alternate Text" /></a>
+				
+				<a href="html/caiouser.html">
+					
+					<img style="height:150px;" src="img/Caiocircular.png" alt="Alternate Text" /></a>
+				
+				<a href="html/fabriciouser.html">
+					<img style="height:150px;" src="img/fabriciocircular.png" alt="Fabricio" /></a>
+	
+				<a href="html/ederuser.html">
+					<img style="height:150px;" src="img/eucircular.png" alt="Alternate Text" /></a>
+				<a href="html/mily.html">
+					<img style="height:150px;" src="img/milycircular.png" alt="Alternate Text" /></a>
+<br>
+				<a href="html/guilherme.html">
+					<img style="height:150px;" src="img/Guilherme_1.png" alt="Alternate Text" /></a>
+
+					<a href="html/ludis.html">
+						<img style="height:150px;" src="img/Ludiscircular.png" alt="Alternate Text" /></a>
+				
+				<a href="html/laura.html">
+					<img style="height:150px;" src="img/laura.png" alt="Alternate Text" /></a>
+		</div>
+
+
+</div>	
+
+
+	<footer class="site-footer container text-center">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="main-footer">
+					<ul class="social">
+						<li><a href="https://discord.gg/NdFaqgx2hn">Discord</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 copyright">
+				<p>Copyright &copy; 2084 <a href="#">Fall Gwecs Team</a></p>
+			</div>
+		</div>
+	</footer>
+
+	
+	<!-- templatemo 421 raleway -->
+	<span class="border-top"></span>
+	<span class="border-left"></span>
+	<span class="border-right"></span>
+	<span class="border-bottom"></span>
+	<span class="shape-1"></span>
+	<span class="shape-2"></span>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/templatemo_custom.js"></script>
+</body>
 </html>
