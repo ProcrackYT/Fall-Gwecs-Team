@@ -63,5 +63,21 @@
         border: inset; ">
         <p style="text-align:center;">Nehum jogo cadastrado até o momento</p>
     </div>
+
+    <div id="chat_camilyuser" style='colors: ' ></div>
+    <script type="text/javascript">
+        var chatovodOnLoad = chatovodOnLoad || [];
+        chatovodOnLoad.push(function() {
+            chatovod.addChatToDivId("chat_camilyuser", {host: "camilyuser.chatovod.com",
+                width: "85%", height: 380, defaultLanguage: "en"});
+        });
+        (function() {
+            var po = document.createElement('script');
+            po.type = 'text/javascript'; po.charset = "UTF-8"; po.async = true;
+            po.src = 'https://st1.chatovod.com/api/js/v1.js?3';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(po, s);
+        })();
+    </script>
 </body>
 </html>
