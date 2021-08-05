@@ -23,3 +23,18 @@
     border: double; 
     background-color:darkgray;
 }
+
+#projetos {
+    text-align:left; color: black; font-weight: bold; background-position: center; padding: 5px; margin: 50px 100px; border: inset;
+}
+
+#div2 {
+    padding: 10px; 
+    background-position:center;  
+    margin: 50px 10px;
+    padding-right: 5cm;
+}
+
+#negrito {
+    font-weight: bold;
+}
