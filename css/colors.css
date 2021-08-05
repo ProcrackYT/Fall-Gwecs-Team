@@ -29,12 +29,23 @@
 }
 
 #div2 {
-    padding: 10px; 
+    padding: 1px; 
     background-position:center;  
-    margin: 50px 10px;
+    margin: 5px 10px;
     padding-right: 5cm;
 }
+#div3 { 
+    font-weight: bold; 
+    background-position: center; 
+    margin: 50px 10px;
+    border: solid; 
+    background-color:rgb(15, 14, 14);
+}
+
 
 #negrito {
     font-weight: bold;
+}
+h2 {
+    padding-left: 10px;
 }
