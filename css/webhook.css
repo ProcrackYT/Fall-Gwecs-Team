@@ -31,16 +31,18 @@
 }
 
 #btn {
-    width: 35%;
+    width: 25%;
     font-size: 25px;
     margin-top: 25px;
     padding: 17px;
-    background-color: #afacac;
+    background-color:grey;
     border: 2px solid #000000c9;
+    color: black;
 }
 
 #btn:hover { 
     background-color: #353333;
+    color: white;
 }
 
 #log {

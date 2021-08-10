@@ -27,6 +27,9 @@
 #projetos {
     text-align:left; color: black; font-weight: bold; background-position: center; padding: 5px; margin: 50px 100px; border: inset;
 }
+#projetos2 {
+ color: black; font-weight: bold; background-position: center;  margin: 50px auto; border: inset;    background-color:darkgray;
+}
 
 #div2 {
     padding: 1px; 
