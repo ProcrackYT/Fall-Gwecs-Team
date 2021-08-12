@@ -52,3 +52,7 @@
 h2 {
     padding-left: 10px;
 }
+#box {
+	display: inline-block;
+    width: 150px;
+}
