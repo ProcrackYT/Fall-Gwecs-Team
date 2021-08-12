@@ -1,150 +1,95 @@
-<!– Feito por Wesley Queiroz Alencar V 0.3–>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora 0.3</title>
-    <style>
-        body {
-            font-size: 25pt;
-            text-align: center;
-            background-position-x: center;
-            background-position-y: center;
-            
-        }
-        #calculadora {
-            background-color: azure;
-            width: auto;
-            height: auto;
-            margin:0cm auto;
-            border:double;
-            color:black;
-            font-size: 15pt;
-        }
-        /*   
-  Project by Zua 
-  https://github.com/thatziv/webhook 
-*/
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-* {
 
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-input,button,h1,p {
-    margin: 0 auto;
-}
-input{
-    font-size: 25px;
-    background-color: #4e4e4e;
-    width: 25%;
-    border: 2px solid #000000c9;
-}
-
-button{
-    width: 25%;
-    font-size: 25px;
-    background-color:grey;
-    border: 2px solid #000000c9;
-    color: black;
-}
-
-button:hover { 
-    background-color: #353333;
-    color: white;
-}
-
-    </style>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora 0.4</title>
+   
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/simple-line-icons.css">
 	<link rel="stylesheet" href="../css/animate.css">
-	<link rel="stylesheet" href="../css/templatemo_style.css">
-	<link rel="stylesheet" href="../css/colors.css">
-    <link rel="stylesheet" href="../css/style.css">
-	<link rel="shortcut icon" href="../img/Fall_Gwecs_simbolo_COMPLETO_PRETO.ico" />
+   <link rel="stylesheet" href="../css/templatemo_style.css">
+   <link rel="stylesheet" href="../css/calculadorabywesley.css">
+   
 
-    <script src="../js/test.js"></script>
 </head>
-<body>
-    <header class="site-header container animated fadeInDown">
-		<div class="header-wrapper">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="site-branding">
-						<a href="../index.html"><h1>Voltar</h1></a>
-					</div>
-				</div>
-				<a href="#" class="toggle-nav hidden-md hidden-lg">
-					<i class="fa fa-bars"></i>
-				</a>
-				
-			</div>
-		</div>
-	</header>
-    
-    <h1>Calculadora 0.3b</h1>
+<body onload="carregar()"
+>
+<header class="site-header container animated fadeInDown">
+   <div class="header-wrapper">
+      <div class="row">
+         <div class="col-md-4">
+            <div class="site-branding">
+               <a href="../index.html"><h1>Voltar</h1></a>
+            </div>
+         </div>
+         <a href="#" class="toggle-nav hidden-md hidden-lg">
+            <i class="fa fa-bars"></i>
+         </a>
+         
+      </div>
+   </div>
+</header>
+   <header>
+      <h1>Calculadora 0.4</h1>
+   </header>
 
-    <div id="projetos2">
-        <img height="20px" src="https://image.flaticon.com/icons/png/512/25/25434.png" alt="" onclick="restar()">
-        <img height="20px" src="https://image.flaticon.com/icons/png/512/107/107272.png" alt="" onclick="somar()">
-        
+   <section> 
+      
+      <div class="calculadora" >
+         
+         <p id="resultado"></p>
+         <table>
 
-        <p><input type="number" id="n1" ><p id="txtoperador"></p><input type="number" id="n2"><br><br><button onclick="calcular()">Calcular</p> </button></p> 
+            <tr>
+               <td><button class="botao" onclick="clean()">C</button></td>
+               <td><button class="botao" onclick="back()"><</button></td>
+               <td><button class="botao" onclick="insert('/')">/</button></td>
+               <td><button class="botao" onclick="insert('*')">X</button></td>
+            </tr>
+            <tr>
+               <td><button class="botao" onclick="insert('7')">7</button></td>
+               <td><button class="botao" onclick="insert('8')">8</button></td>
+               <td><button class="botao" onclick="insert('9')">9</button></td>
+               <td><button class="botao" onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+               <td><button class="botao" onclick="insert('4')">4</button></td>
+               <td><button class="botao" onclick="insert('5')">5</button></td>
+               <td><button class="botao" onclick="insert('6')">6</button></td>
+               <td><button class="botao" onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+               <td><button class="botao" onclick="insert('1')">1</button></td>
+               <td><button class="botao" onclick="insert('2')">2</button></td>
+               <td><button class="botao" onclick="insert('3')">3</button></td>
+               <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+           </tr>
+           <tr>
+               <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
+               <td><button class="botao" onclick="insert('.')">.</button></td>
+               </tr>
+         </table>
+         
+      </div>
+      <div id="info" >
+         <p >Esta calculadora é uma modificação experimental do projeto <br> Gutoneitzke
+            /
+            calculadora
+            </p>
+            <br>
+         <a  href="https://github.com/Gutoneitzke/calculadora"><img id="linka" src="https://camo.githubusercontent.com/e01f09e631aa132e45a976bf114d0a98842b1871b4e28b384bbf316bc337d566/68747470733a2f2f312e62702e626c6f6773706f742e636f6d2f2d5466434141386d6c6336412f594356417a6d657a4c50492f4141414141414141416e592f586e33704931506a3755737443347846686c426e4657797333646b762d47625141434c63424741735948512f73313238302f63616c63756c61646f72612e706e67" alt=""></a>
+      </div>
+      
+   
 
-        <div id="res"></div>
-    </div>
-    <div id="test"></div>
+      
+   </section>
 
-
-    <script>
-        var opera
-        var operar
-
-        function somar(){
-            opera = "somar"
-            document.getElementById("txtoperador").innerHTML="+"
-        }
-        function restar(){
-            opera = "restar"
-            document.getElementById("txtoperador").innerHTML="-"
-        }
-        var num = 0
-        function calcular() {
-            var tn1 = window.document.getElementById("n1")
-            var tn2 = window.document.getElementById("n2")
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            
-            
-            if (opera == "somar"){
-                r = n1+n2
-                document.getElementById("res").innerHTML="O resultado da sua conta: "+n1+" + "+n2+ " deu: "+r;
-            }
-            else if (opera =="restar"){
-                r = n1-n2
-                document.getElementById("res").innerHTML="O resultado da sua conta: "+n1+" - "+n2+ " deu: "+r;
-            }
-
-            else if (opera == null){
-                num = num+1
-                document.getElementById("res").innerHTML="[Erro!] Tente clicar no botão somar ou subitrair "+num;
-            }
-            var res = window.document.getElementById("res").innerText
-
-            if (opera != null) {
-                var elemento_pai = document.body;
-                var p = document.createElement("p");
-                var texto = document.createTextNode(res);
-                p.appendChild(texto);
-                elemento_pai.appendChild(p);
-            }
-
-  
-        }
-    </script>
+   
+   <script src="../js/calculadorabywesley.js"></script>
 </body>
 </html>
