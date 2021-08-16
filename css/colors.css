@@ -53,6 +53,10 @@ h2 {
     padding-left: 10px;
 }
 #box {
+	width: 150px;
 	display: inline-block;
+}
+.circular {
     width: 150px;
+    border-radius: 150%;
 }
